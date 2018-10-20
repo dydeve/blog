@@ -7,7 +7,7 @@ title: dydeve的博客
 subtitle: 随便写写
 description:
 keywords:
-author: John Doe
+author: duyu
 language: zh-Hans
 timezone:
 
@@ -35,7 +35,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -81,3 +81,10 @@ deploy:
   type: git
   repo: git@github.com:dydeve/dydeve.github.io.git
   branch: master
+
+####
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
