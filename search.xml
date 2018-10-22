@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[学习机器学习的难点]]></title>
+    <url>%2F2018%2F10%2F22%2Fdifficulty-in-learing-ml%2F</url>
+    <content type="text"><![CDATA[近期在阅读spark mllib的官方文档，发现有点难度。主要是数学，现在想想，学习机器学习的最佳时间是大学，尤其是大二、大三。《高等数学(上下)》，《概率论》，《线性代数》，这三门课必须掌握。但是已经毕业两年了，有点难度。 记之！]]></content>
+      <tags>
+        <tag>杂言</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[学习总结]]></title>
     <url>%2F2018%2F10%2F20%2Fgithub-io%2F</url>
     <content type="text"><![CDATA[spark mllib 学习总结]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2018%2F10%2F20%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
   </entry>
 </search>
