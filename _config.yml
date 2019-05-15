@@ -83,8 +83,8 @@ deploy:
   branch: master
 
 ####
-search:
-  path: search.xml
-  field: post
-  format: html
-  limit: 10000
+# search:
+#  path: search.xml
+#  field: post
+#  format: html
+#  limit: 10000

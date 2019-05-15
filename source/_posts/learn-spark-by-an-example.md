@@ -7,6 +7,7 @@ tags:
 categories: 
  - spark
 ---
+spark执行流程中，包括transformation，action两种操作。action切分job，transformation中的shuffle切分stage。
 
 以spark自带examples里的的`GroupByTest`为例，进行分析
 
