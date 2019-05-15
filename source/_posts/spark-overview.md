@@ -43,7 +43,17 @@ $SPARK_HOME/conf/spark-env.sh
 xport SPARK_HISTORY_OPTS="-Dspark.history.ui.port=18080 -Dspark.history.retainedApplications=10000 -Dspark.history.fs.logDirectory=hdfs://localhost:9000/spark_log"
 ```
 
+在hdfs创建log目录
+```shell
+$HADOOP_HOME/bin/hdfs dfs -mkdir /spark_log
+```
+
 ```shell
 bin/spark-submit --master spark://localhost:7077 --jars /opt/spark/examples/jars/spark-examples_2.11-2.3.1.jar --class org.apache.spark.examples.GroupByTest 2 1000 1000 2
 ```
 通过spark-submit 提交的application会在`http://spark-master:18080/`展示
+
+---
+参考：
+
+[spark cluster overview](https://spark.apache.org/docs/2.4.3/cluster-overview.html)
