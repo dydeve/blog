@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[学习机器学习的难点]]></title>
+    <url>%2F2018%2F10%2F22%2Fdifficulty-in-learing-ml%2F</url>
+    <content type="text"><![CDATA[近期在阅读spark mllib的官方文档，发现有点难度。主要是数学，现在想想，学习机器学习的最佳时间是大学，尤其是大二、大三。《高等数学(上下)》，《概率论》，《线性代数》，这三门课必须掌握。但是已经毕业两年了，有点难度。 记之！]]></content>
+      <tags>
+        <tag>杂言</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[学习总结]]></title>
+    <url>%2F2018%2F10%2F20%2Fgithub-io%2F</url>
+    <content type="text"><![CDATA[spark mllib 学习总结]]></content>
+  </entry>
+</search>
