@@ -152,6 +152,30 @@ abstract class RDD[T: ClassTag](
   )
 ```
 
+有时，构造函数里的dependency是 `Nil` ,这是可以通过 `getDependencies` 方法获得依赖类型
+
+```scala
+@DeveloperApi
+class UnionRDD[T: ClassTag](
+    sc: SparkContext,
+    var rdds: Seq[RDD[T]])
+  extends RDD[T](sc, Nil) {  // Nil since we implement getDependencies
+
+  ...
+
+  override def getDependencies: Seq[Dependency[_]] = {
+    val deps = new ArrayBuffer[Dependency[_]]
+    var pos = 0
+    for (rdd <- rdds) {
+      deps += new RangeDependency(rdd, 0, pos, rdd.partitions.length)
+      pos += rdd.partitions.length
+    }
+    deps
+  }
+  ...
+}
+```
+
 ShuffleDependency: 父RDD中的每个partition分成多个部分transformation到子RDD，reducebyKey等
 
 OneToOneDependency: 1对1，map，mapPartitions等
