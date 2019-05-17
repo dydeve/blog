@@ -1,5 +1,6 @@
 ---
-title: spark-transformation-and-action
+title: spark transformation and action overview
+my: spark-transformation-and-action-overview
 date: 2019-05-15 22:44:20
 tags: 
  - spark
@@ -10,7 +11,7 @@ categories:
 
 ### action 与 transformation
 
-![](./spark-transformation-and-action/transformation-and-action.png)
+![](./spark-transformation-and-action-overview/transformation-and-action.png)
 
 [learn spark by an example](./learn-spark-by-an-example.md)中提到了 [transformation](http://spark.apache.org/docs/2.4.3/rdd-programming-guide.html#transformations) 和 [action](http://spark.apache.org/docs/2.4.3/rdd-programming-guide.html#actions) 两种操作，意为准换、行动。`org.apache.spark.rdd.RDD` 包含这两种算子。可以通过函数返回值来区分这两种算子：
 - `transformation`：返回RDD，如map，flatMap，union等
@@ -175,7 +176,7 @@ class UnionRDD[T: ClassTag](
 ```
 
 dependency类图如下
-![](./spark-transformation-and-action/dependency-class-graph.jpg)
+![](./spark-transformation-and-action-overview/dependency-class-graph.jpg)
 
 父RDD : 子RDD | possible dependency
 --- | ---
@@ -339,11 +340,11 @@ def combineByKeyWithClassTag[C](
 `pipeline` 思想：数据用的时候再算，而且数据是流到要计算的位置
 
 下图stage中，包含 map union partitionBy join
-![](./spark-transformation-and-action/dependency0.png)
+![](./spark-transformation-and-action-overview/dependency0.png)
 
 
 以笛卡尔积为例
-![](./spark-transformation-and-action/cartesian.png)
+![](./spark-transformation-and-action-overview/cartesian.png)
 一共6个 ResultTask.每个 Task 计算3个 RDD，读2个 data block。计算 CartesianRDD 的 partition，需要从2个RDD获取records，由于存在一个ResultTask里，不需要shuffle
 
 不管是1:1,N:1,N:N，只要是NarrowDependency chain，就可以进行 pipeline

@@ -1,5 +1,6 @@
 ---
 title: learn spark by an example
+my: learn-spark-by-an-example
 date: 2019-05-15 16:16:51
 tags: 
  - spark
