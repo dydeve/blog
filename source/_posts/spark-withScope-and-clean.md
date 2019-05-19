@@ -236,6 +236,7 @@ private[spark] object RDDOperationScope extends Logging {
 可用来做DAG可视化  DAG visualization on SparkUI。如[learn spark by an example](./learn-spark-by-an-example.md)的SparkUI
 ![](./spark-withScope-and-clean/scope.jpg)
 
+{% asset_img spark-withScope-and-clean/scope.jpg This is an example image %}
 
 ### sc.clean(f)
 

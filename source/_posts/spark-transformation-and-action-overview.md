@@ -233,7 +233,11 @@ class CartesianRDD[T: ClassTag, U: ClassTag](
 ```
 NarrowDependency VS ShuffleDependency => FullDependency VS PartialDependency
 
-ShuffleDependency: 父RDD中的每个partition分成多个部分transformation到子RDD，reducebyKey等,
+NarrowDependency: 子rdd依赖父RDD中固定的Partition
+
+ShuffleDependency: 子RDD对父RDD中的所有RDD都可能产生依赖.父RDD中的每个partition分成多个部分transformation到子RDD，reducebyKey等,
+
+
 
 OneToOneDependency: 1对1，map，mapPartitions等
 
