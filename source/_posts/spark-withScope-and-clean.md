@@ -233,7 +233,8 @@ private[spark] object RDDOperationScope extends Logging {
 ```
 其核心功能，是将RDDOperationScope对象放入ThreadLocal,name是withScope前的函数名.
 
-可用来做DAG可视化  DAG visualization on SparkUI。如[learn spark by an example](./learn-spark-by-an-example.md)的SparkUI
+可用来做DAG可视化  DAG visualization on SparkUI。如{% post_link learn-spark-by-an-example learn spark by an example %}的SparkUI
+
 ![](./spark-withScope-and-clean/scope.jpg)
 
 {% asset_img spark-withScope-and-clean/scope.jpg This is an example image %}

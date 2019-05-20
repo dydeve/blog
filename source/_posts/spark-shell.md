@@ -6,6 +6,7 @@ date: 2019-05-18 15:43:05
  - big data
 categories: 
  - spark
+ - The Art of Spark Kernel Design
 ---
 
 安装spark的流程就不说了。本篇讲述spark-shell
