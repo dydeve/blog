@@ -4,7 +4,7 @@ my: metrics
 date: 2019-05-23 15:49:19
 tags:
  - monitor
- - metirc
+ - metric
 categories:
  - util
 ---
@@ -612,6 +612,7 @@ public abstract class ScheduledReporter implements Closeable, Reporter {
     - Buffer pool sizes and utilization
 
 [Monitoring your JVM with Dropwizard Metrics](https://www.stubbornjava.com/posts/monitoring-your-jvm-with-dropwizard-metrics)
+
 ---
 
 ### 参考
