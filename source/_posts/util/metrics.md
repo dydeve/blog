@@ -596,6 +596,7 @@ public abstract class ScheduledReporter implements Closeable, Reporter {
                                 SortedMap<String, Timer> timers);
 }
 ```
+所谓的start、stop，就是调度定时器、关闭定时器
 
 ##### Other Reporters
 [MetricsServlet](https://metrics.dropwizard.io/4.0.0/manual/servlets.html#manual-servlets) 健康检查、thread dump、JVM-level and OS-level信息
